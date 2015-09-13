@@ -1,4 +1,4 @@
-var View = Vue.extend({
+var MyComponent = Vue.extend({
   route: {
     data: function (transition) {
       var name = 'index'
@@ -33,10 +33,10 @@ var router = new VueRouter({
 
 router.map({
   '/': {
-    component: View
+    component: MyComponent
   },
   '/:name': {
-    component: View
+    component: MyComponent
   }
 })
 
