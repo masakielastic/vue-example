@@ -28,7 +28,7 @@ var App = Vue.extend({})
 
 var router = new VueRouter({
   history: true,
-  root: '/vue-example'
+  root: '/vue-example/router'
 })
 
 router.map({
