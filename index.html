@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>vue-router の例</title>
+    <style>
+      body { margin: 50px }
+      ul li { display: inline }
+    </style>
+  </head>
+
+  <body>
+    <div id="app">
+      <ul>
+        <li><a v-link="/">ホーム</a></li>
+        <li><a v-link="/about">自己紹介</a></li>
+        <li><a v-link="/notfound">存在しないページ</a></li>
+      </ul>
+      <router-view></router-view>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/0.12.14/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/0.6.0/vue-router.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
